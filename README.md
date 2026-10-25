@@ -2,6 +2,9 @@
 
 Academia abierta de microcursos con examen e insignia en PDF. Sin servidor y sin datos: el alumno se lleva su PDF y lo custodia.
 
+https://inteliun.github.io/academy/
+
+
 ## Añadir un curso
 1. Copia `cursos/mif.json` a `cursos/<id>.json` y edita título, módulos y preguntas (el `id` debe coincidir con el nombre del archivo).
 2. Añade una entrada en `cursos/index.json`.
