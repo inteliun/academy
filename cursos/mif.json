@@ -1,0 +1,286 @@
+{
+ "title": "Mantenimiento Industrial: Fundamentos",
+ "version": "1.0.0",
+ "description": "Tipos de mantenimiento, indicadores clave, fiabilidad y gestión de calidad aplicada al mantenimiento.",
+ "criteria": "Superar con al menos un 80 % el examen de 15 preguntas sobre los tres módulos del curso.",
+ "tags": [
+  "mantenimiento",
+  "fiabilidad",
+  "ISO 9001",
+  "TPM",
+  "RCM"
+ ],
+ "pass_ratio": 0.8,
+ "modules": [
+  {
+   "title": "Módulo 1 · Tipos de mantenimiento e indicadores",
+   "study": [
+    "Correctivo: se actúa tras el fallo. Preventivo: tareas programadas por tiempo/uso. Predictivo: se interviene según el estado real (vibraciones, termografía, análisis de aceite). Mejorativo/proactivo: se elimina la causa del fallo.",
+    "MTBF = tiempo medio entre fallos. MTTR = tiempo medio de reparación.",
+    "Disponibilidad inherente = MTBF / (MTBF + MTTR).",
+    "OEE = Disponibilidad × Rendimiento × Calidad."
+   ],
+   "questions": [
+    {
+     "q": "¿Qué tipo de mantenimiento vigila el estado real del equipo (vibraciones, temperatura, aceite) para intervenir antes del fallo?",
+     "options": [
+      "Correctivo",
+      "Predictivo",
+      "Preventivo sistemático",
+      "Mejorativo"
+     ],
+     "answer": 1,
+     "explain": "El predictivo se basa en la monitorización de condición."
+    },
+    {
+     "q": "Un equipo tiene MTBF = 400 h y MTTR = 10 h. ¿Cuál es su disponibilidad inherente?",
+     "options": [
+      "95,0 %",
+      "40,0 %",
+      "99,9 %",
+      "97,6 %"
+     ],
+     "answer": 3,
+     "explain": "400 / (400 + 10) = 0,9756."
+    },
+    {
+     "q": "Disponibilidad 90 %, rendimiento 95 % y calidad 98 %. ¿Cuál es el OEE?",
+     "options": [
+      "83,8 %",
+      "94,3 %",
+      "87,5 %",
+      "91,0 %"
+     ],
+     "answer": 0,
+     "explain": "0,90 × 0,95 × 0,98 = 0,838."
+    },
+    {
+     "q": "¿Qué mide el MTTR?",
+     "options": [
+      "Tiempo medio entre fallos",
+      "Tiempo total de parada planificada",
+      "Tiempo medio de reparación",
+      "Vida útil del equipo"
+     ],
+     "answer": 2,
+     "explain": "MTTR = Mean Time To Repair."
+    },
+    {
+     "q": "¿Cuál es una tarea típica del mantenimiento preventivo sistemático?",
+     "options": [
+      "Cambiar un rodamiento tras su rotura",
+      "Lubricar y sustituir filtros cada cierto número de horas",
+      "Reparar una avería de emergencia",
+      "Rediseñar el equipo para eliminar un fallo crónico"
+     ],
+     "answer": 1,
+     "explain": "Se programa por tiempo o uso, independientemente del estado."
+    }
+   ],
+   "lessons": [
+    {
+     "title": "Los cuatro enfoques del mantenimiento",
+     "text": [
+      "El mantenimiento es el conjunto de acciones destinadas a conservar un equipo en condiciones de cumplir su función, o a devolvérsela cuando la ha perdido. Su objetivo es lograr la máxima disponibilidad con seguridad y a un coste razonable. Se clasifica según el momento y el criterio con el que se interviene.",
+      "Correctivo: se actúa después del fallo. Puede ser de emergencia, con parada imprevista, más caro y más inseguro, o planificado, cuando el fallo no es crítico y se repara en un momento conveniente. Es razonable en equipos baratos, redundantes o sin consecuencias graves.",
+      "Preventivo sistemático: tareas programadas por tiempo o por uso (horas de funcionamiento, ciclos, kilómetros), con independencia del estado real del equipo. Ejemplos: lubricar, cambiar aceite, sustituir filtros cada cierto número de horas. Es previsible, pero puede cambiar piezas todavía buenas y no evita los fallos aleatorios.",
+      "Predictivo: se vigila el estado real del equipo con técnicas como análisis de vibraciones, termografía, análisis de aceite, ultrasonidos o corrientes del motor, y se interviene cuando los valores se acercan a un límite, justo antes del fallo. Exige instrumentación y personal formado. Clave de examen: predictivo equivale a estado real.",
+      "Mejorativo o proactivo: estudia las causas de los fallos repetitivos y modifica el equipo, el material, el procedimiento o el diseño para eliminarlas. En lugar de reparar una y otra vez, mejora la fiabilidad del activo."
+     ]
+    },
+    {
+     "title": "Indicadores: MTBF, MTTR, disponibilidad y OEE",
+     "text": [
+      "MTBF (Mean Time Between Failures) es el tiempo medio entre fallos: tiempo total de funcionamiento dividido entre el número de fallos. Mide la fiabilidad, y cuanto mayor, mejor. MTTR (Mean Time To Repair) es el tiempo medio de reparación: tiempo total de reparación dividido entre el número de reparaciones. Mide la mantenibilidad, y cuanto menor, mejor.",
+      "La disponibilidad inherente es A = MTBF / (MTBF + MTTR). Ejemplo: con MTBF = 200 h y MTTR = 8 h, A = 200 / 208 = 0,9615, es decir, un 96,2 %. Para mejorarla hay dos caminos: alargar el MTBF (menos fallos) o acortar el MTTR (reparar más rápido).",
+      "El OEE (Eficacia Global del Equipo) es Disponibilidad × Rendimiento × Calidad. La disponibilidad compara el tiempo realmente produciendo con el planificado, el rendimiento la velocidad real con la ideal, y la calidad las piezas buenas con el total. Ejemplo: 85 % × 90 % × 99 % = 0,85 × 0,90 × 0,99 = 0,757, es decir, un 75,7 %. Suele citarse el 85 % como referencia de clase mundial.",
+      "Trucos de examen: el OEE es un producto, no una suma; convierte siempre los porcentajes a decimales antes de multiplicar; y comprueba que MTBF y MTTR estén en la misma unidad de tiempo."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Módulo 2 · Fiabilidad y mejora continua",
+   "study": [
+    "Curva de la bañera: mortalidad infantil (tasa decreciente), vida útil (tasa aproximadamente constante) y desgaste (tasa creciente).",
+    "AMFE: NPR = Severidad × Ocurrencia × Detección.",
+    "RCM (Mantenimiento Centrado en Fiabilidad): parte de las funciones del activo en su contexto operativo, sus fallos funcionales, modos de fallo y consecuencias.",
+    "5 Porqués: técnica de análisis de causa raíz. TPM: incluye mantenimiento autónomo, donde el operador hace limpieza, inspección y lubricación básicas."
+   ],
+   "questions": [
+    {
+     "q": "En la fase de vida útil de la curva de la bañera, la tasa de fallos es:",
+     "options": [
+      "Decreciente",
+      "Creciente",
+      "Nula",
+      "Aproximadamente constante"
+     ],
+     "answer": 3,
+     "explain": "Los fallos son sobre todo aleatorios."
+    },
+    {
+     "q": "En un AMFE, ¿cómo se calcula el NPR?",
+     "options": [
+      "Severidad × Ocurrencia × Detección",
+      "Severidad + Ocurrencia + Detección",
+      "Frecuencia × Coste × Duración",
+      "MTBF ÷ MTTR"
+     ],
+     "answer": 0,
+     "explain": "Número de Prioridad de Riesgo."
+    },
+    {
+     "q": "El análisis RCM parte de definir:",
+     "options": [
+      "El presupuesto anual de repuestos",
+      "El calendario de paradas",
+      "Las funciones del activo en su contexto operativo",
+      "El proveedor de mantenimiento"
+     ],
+     "answer": 2,
+     "explain": "Primero funciones, luego fallos funcionales, modos de fallo, efectos y consecuencias."
+    },
+    {
+     "q": "¿Para qué se usa la técnica de los 5 Porqués?",
+     "options": [
+      "Medir la disponibilidad",
+      "Planificar la formación",
+      "Llegar a la causa raíz de un problema",
+      "Calcular el OEE"
+     ],
+     "answer": 2,
+     "explain": "Se pregunta «¿por qué?» sucesivamente hasta la causa raíz."
+    },
+    {
+     "q": "En TPM, el mantenimiento autónomo consiste en que:",
+     "options": [
+      "Los robots hagan todo el mantenimiento",
+      "Se subcontrate todo el mantenimiento",
+      "Solo se repare tras la avería",
+      "El operador asuma limpieza, inspección y lubricación básicas"
+     ],
+     "answer": 3,
+     "explain": "Implica al operador en el cuidado diario del equipo."
+    }
+   ],
+   "lessons": [
+    {
+     "title": "La curva de la bañera",
+     "text": [
+      "La curva de la bañera describe cómo evoluciona la tasa de fallos de un equipo a lo largo de su vida, y tiene tres fases. En la mortalidad infantil la tasa es decreciente: predominan los fallos por defectos de fabricación, montaje o puesta en marcha, y baja a medida que se corrigen.",
+      "En la vida útil la tasa es aproximadamente constante: los fallos son sobre todo aleatorios y es la fase en la que el MTBF tiene más sentido como indicador. En el desgaste la tasa es creciente, por fatiga, corrosión o envejecimiento, y es donde se justifica sustituir o renovar de forma preventiva.",
+      "Consecuencia práctica: la estrategia debe cambiar según la fase. En la primera interesa el rodaje y la verificación del montaje; en la segunda, la monitorización por condición; en la tercera, la renovación planificada."
+     ]
+    },
+    {
+     "title": "AMFE y RCM: priorizar y decidir",
+     "text": [
+      "El AMFE (Análisis de Modos de Fallo y Efectos) identifica cómo puede fallar cada componente, qué efectos produce y cuáles son sus causas. Cada modo de fallo se puntúa, normalmente de 1 a 10, en Severidad (S), Ocurrencia (O) y Detección (D, que es mayor cuanto más difícil es detectar el fallo antes de que llegue al cliente). El Número de Prioridad de Riesgo es NPR = S × O × D.",
+      "Ejemplo: S = 8, O = 4, D = 5 → NPR = 160. Los modos de fallo con NPR más alto se atienden primero. En versiones recientes del método (AIAG-VDA) el NPR se sustituye por una tabla de prioridad de acción, pero en un examen básico el NPR sigue siendo la referencia.",
+      "El RCM (Mantenimiento Centrado en Fiabilidad) decide qué mantenimiento aplicar a cada activo. Su orden es clave: primero se definen las funciones del activo en su contexto operativo; después los fallos funcionales, los modos de fallo, sus efectos y las consecuencias (seguridad, medio ambiente, operativas y económicas). Con ello se elige la tarea adecuada: predictiva, preventiva, búsqueda de fallos ocultos, rediseño o correctivo."
+     ]
+    },
+    {
+     "title": "5 Porqués y TPM",
+     "text": [
+      "Los 5 Porqués son una técnica de análisis de causa raíz: se pregunta «¿por qué?» de forma sucesiva hasta llegar al origen real. Ejemplo: la bomba se paró, ¿por qué? Porque el motor se sobrecalentó; ¿por qué? La ventilación estaba obstruida; ¿por qué? No se limpia el filtro; ¿por qué? No figuraba en el plan de mantenimiento; ¿por qué? Nadie revisó el plan tras la instalación. La causa raíz es un fallo del proceso, no del operario. El número cinco es orientativo.",
+      "El TPM (Mantenimiento Productivo Total), de origen japonés e impulsado por Seiichi Nakajima, implica a toda la organización en conseguir cero averías, cero defectos y cero accidentes. Uno de sus pilares es el mantenimiento autónomo: el operador asume la limpieza, la inspección y la lubricación básicas de su equipo y detecta anomalías de forma temprana, lo que libera al personal de mantenimiento para las tareas especializadas."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Módulo 3 · Calidad, seguridad y gestión de activos",
+   "study": [
+    "PDCA: Planificar, Hacer, Verificar, Actuar (ciclo de mejora continua base de ISO 9001).",
+    "ISO 9001:2015: cláusula 9.2 = auditoría interna; cláusula 10.2 = no conformidad y acción correctiva (eliminar la causa para que no se repita).",
+    "LOTO (Lockout/Tagout): bloqueo y etiquetado de todas las fuentes de energía antes de intervenir.",
+    "ISO 55001: requisitos de un sistema de gestión de activos."
+   ],
+   "questions": [
+    {
+     "q": "¿Qué significa PDCA?",
+     "options": [
+      "Planificar, Hacer, Verificar, Actuar",
+      "Preparar, Dirigir, Controlar, Auditar",
+      "Priorizar, Decidir, Comprobar, Archivar",
+      "Programar, Documentar, Certificar, Aprobar"
+     ],
+     "answer": 0,
+     "explain": "Ciclo de Deming."
+    },
+    {
+     "q": "En ISO 9001, una acción correctiva sirve para:",
+     "options": [
+      "Premiar al personal",
+      "Actualizar el manual de la empresa",
+      "Eliminar la causa de una no conformidad y evitar que se repita",
+      "Sustituir al auditor"
+     ],
+     "answer": 2,
+     "explain": "Cláusula 10.2."
+    },
+    {
+     "q": "¿Qué es el procedimiento LOTO?",
+     "options": [
+      "Un tipo de lubricación",
+      "Un indicador de fiabilidad",
+      "Un método de inspección visual",
+      "Bloqueo y etiquetado de energías antes de intervenir en un equipo"
+     ],
+     "answer": 3,
+     "explain": "Evita arranques o liberaciones de energía inesperadas."
+    },
+    {
+     "q": "¿Qué trata la norma ISO 55001?",
+     "options": [
+      "Gestión ambiental",
+      "Gestión de activos",
+      "Seguridad y salud en el trabajo",
+      "Gestión de la energía"
+     ],
+     "answer": 1,
+     "explain": "ISO 14001 = ambiental, ISO 45001 = SST, ISO 50001 = energía."
+    },
+    {
+     "q": "¿Qué cláusula de ISO 9001:2015 exige realizar auditorías internas a intervalos planificados?",
+     "options": [
+      "7.1",
+      "9.2",
+      "8.5",
+      "10.2"
+     ],
+     "answer": 1,
+     "explain": "La 9.2 es «Auditoría interna»."
+    }
+   ],
+   "lessons": [
+    {
+     "title": "PDCA e ISO 9001",
+     "text": [
+      "El ciclo PDCA o ciclo de Deming es la base de la mejora continua y consta de cuatro etapas: Planificar (Plan), Hacer (Do), Verificar (Check) y Actuar (Act). Se planifican objetivos y procesos, se ejecutan, se miden y comparan los resultados y se corrige o estandariza lo aprendido, para volver a empezar.",
+      "La norma ISO 9001:2015 establece los requisitos de un sistema de gestión de la calidad y se apoya en el enfoque a procesos y en el ciclo PDCA. Dos cláusulas son imprescindibles: la 9.2 exige auditorías internas a intervalos planificados para comprobar que el sistema cumple los requisitos y se aplica con eficacia, y la 10.2 regula la no conformidad y la acción correctiva.",
+      "Distingue bien dos conceptos: la corrección arregla la no conformidad detectada (reparar el defecto), mientras que la acción correctiva elimina su causa para que no se repita, y después se comprueba su eficacia. Memoriza: 9.2 es auditoría interna y 10.2 es no conformidad y acción correctiva."
+     ]
+    },
+    {
+     "title": "Seguridad en la intervención: LOTO",
+     "text": [
+      "LOTO (Lockout/Tagout) es el procedimiento de bloqueo y etiquetado de todas las fuentes de energía antes de intervenir en un equipo, para evitar arranques o liberaciones de energía inesperadas. Hay que considerar todas las energías: eléctrica, neumática, hidráulica, térmica, mecánica residual y potencial (por ejemplo, una carga suspendida).",
+      "Secuencia habitual: identificar las fuentes de energía, avisar a los afectados, parar el equipo, aislarlo, bloquear cada punto con un candado personal y colocar una etiqueta, disipar las energías residuales y verificar la ausencia de energía antes de empezar. Cada trabajador pone su propio candado y solo quien lo puso puede retirarlo.",
+      "En España el marco incluye el Real Decreto 1215/1997 sobre equipos de trabajo y la norma UNE-EN ISO 14118 sobre prevención de la puesta en marcha intempestiva de las máquinas."
+     ]
+    },
+    {
+     "title": "ISO 55001 y gestión de activos",
+     "text": [
+      "La gestión de activos es la actividad coordinada de una organización para obtener valor de sus activos a lo largo de todo su ciclo de vida: adquisición, operación, mantenimiento y renovación o baja, equilibrando coste, riesgo y rendimiento. La familia ISO 55000 la desarrolla: la 55000 da la visión general y los términos, la 55001 establece los requisitos del sistema de gestión de activos y la 55002 ofrece orientación para aplicarla.",
+      "Para no confundir normas, memoriza este cuadro: ISO 9001, calidad; ISO 14001, medio ambiente; ISO 45001, seguridad y salud en el trabajo; ISO 50001, energía; ISO 55001, gestión de activos."
+     ]
+    }
+   ]
+  }
+ ],
+ "id": "mif"
+}

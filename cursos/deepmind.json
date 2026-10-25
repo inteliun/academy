@@ -1,0 +1,257 @@
+{
+ "id": "deepmind",
+ "title": "Fundamentos de Google DeepMind",
+ "version": "1.0.0",
+ "description": "Historia, aprendizaje por refuerzo, hitos como AlphaGo y AlphaFold, y la ciencia e IA general que desarrolla Google DeepMind.",
+ "criteria": "Superar con al menos un 80 % el examen de 15 preguntas sobre los tres módulos del curso.",
+ "tags": [
+  "DeepMind",
+  "IA",
+  "aprendizaje por refuerzo",
+  "AlphaGo",
+  "AlphaFold"
+ ],
+ "pass_ratio": 0.8,
+ "modules": [
+  {
+   "title": "Módulo 1 · Historia y misión",
+   "study": [
+    "DeepMind se fundó en Londres en 2010 por Demis Hassabis, Shane Legg y Mustafa Suleyman.",
+    "En 2014 fue adquirida por Google, pero mantuvo una gran autonomía de investigación.",
+    "En abril de 2023 se fusionó con Google Brain y nació Google DeepMind, dirigida por Demis Hassabis.",
+    "Su misión histórica: «resolver la inteligencia» y usarla para ayudar a resolver otros problemas, combinando neurociencia, aprendizaje automático e ingeniería."
+   ],
+   "questions": [
+    {
+     "q": "¿En qué año y ciudad se fundó DeepMind?",
+     "options": [
+      "2010, Londres",
+      "2014, Mountain View",
+      "2016, Nueva York",
+      "2006, Zúrich"
+     ],
+     "answer": 0,
+     "explain": "Se fundó en Londres en 2010."
+    },
+    {
+     "q": "¿Cuál de estas personas cofundó DeepMind?",
+     "options": [
+      "Geoffrey Hinton",
+      "Sundar Pichai",
+      "Demis Hassabis",
+      "Ilya Sutskever"
+     ],
+     "answer": 2,
+     "explain": "Los cofundadores son Demis Hassabis, Shane Legg y Mustafa Suleyman."
+    },
+    {
+     "q": "¿Qué empresa adquirió DeepMind en 2014?",
+     "options": [
+      "Microsoft",
+      "Facebook",
+      "Amazon",
+      "Google"
+     ],
+     "answer": 3,
+     "explain": "Google la adquirió en 2014."
+    },
+    {
+     "q": "En 2023 DeepMind se fusionó con otro equipo de Google para formar Google DeepMind. ¿Con cuál?",
+     "options": [
+      "OpenAI",
+      "Google Brain",
+      "Waymo",
+      "Boston Dynamics"
+     ],
+     "answer": 1,
+     "explain": "La fusión con Google Brain se anunció en abril de 2023."
+    },
+    {
+     "q": "¿Cuál fue la misión con la que se presentó DeepMind?",
+     "options": [
+      "Resolver la inteligencia y usarla para resolver otros problemas",
+      "Fabricar hardware para centros de datos",
+      "Crear un buscador alternativo",
+      "Desarrollar videojuegos comerciales"
+     ],
+     "answer": 0,
+     "explain": "«Solve intelligence» fue su lema fundacional."
+    }
+   ],
+   "lessons": [
+    {
+     "title": "De una startup londinense a Google DeepMind",
+     "text": [
+      "DeepMind nació en Londres en 2010 de la mano de Demis Hassabis, Shane Legg y Mustafa Suleyman. Hassabis combinaba tres perfiles poco habituales: prodigio del ajedrez, diseñador de videojuegos y doctor en neurociencia cognitiva. De ahí su idea de que la inteligencia puede estudiarse uniendo neurociencia, aprendizaje automático y computación a gran escala.",
+      "En 2014 Google adquirió la compañía, que mantuvo su sede en Londres y una notable libertad para investigar a largo plazo. En abril de 2023 se fusionó con Google Brain, el otro gran laboratorio de IA de Google, y nació Google DeepMind con Hassabis al frente. La unión buscó concentrar talento y recursos en modelos como Gemini.",
+      "Su enfoque suele consistir en elegir problemas bien definidos, como un juego o una proteína, donde el progreso se puede medir con claridad, y escalar después esas ideas hacia problemas científicos reales."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Módulo 2 · Aprendizaje por refuerzo y juegos",
+   "study": [
+    "Aprendizaje por refuerzo: un agente actúa en un entorno, recibe recompensas y aprende una política que maximiza la recompensa acumulada.",
+    "DQN (2013-2015): una red neuronal profunda aprendió a jugar muchos juegos de Atari a partir de los píxeles de la pantalla.",
+    "AlphaGo combinó redes neuronales con búsqueda en árbol (Monte Carlo) y venció a Lee Sedol 4-1 en marzo de 2016.",
+    "AlphaGo Zero aprendió solo mediante autojuego, sin partidas humanas. AlphaZero generalizó el método a Go, ajedrez y shogi. AlphaStar alcanzó nivel Gran Maestro en StarCraft II."
+   ],
+   "questions": [
+    {
+     "q": "En aprendizaje por refuerzo, ¿qué recibe el agente tras actuar para saber si lo hizo bien?",
+     "options": [
+      "Etiquetas correctas para cada ejemplo",
+      "Una recompensa",
+      "Un nuevo conjunto de datos",
+      "Un mapa de atención"
+     ],
+     "answer": 1,
+     "explain": "La señal de aprendizaje es la recompensa."
+    },
+    {
+     "q": "¿Qué logró el sistema DQN de DeepMind?",
+     "options": [
+      "Traducir idiomas",
+      "Predecir estructuras de proteínas",
+      "Jugar muchos juegos de Atari a partir de los píxeles",
+      "Conducir coches de forma autónoma"
+     ],
+     "answer": 2,
+     "explain": "Fue un hito del aprendizaje por refuerzo profundo."
+    },
+    {
+     "q": "¿A quién venció AlphaGo en marzo de 2016?",
+     "options": [
+      "Garry Kasparov",
+      "Magnus Carlsen",
+      "Viswanathan Anand",
+      "Lee Sedol"
+     ],
+     "answer": 3,
+     "explain": "Lee Sedol, campeón de Go, perdió 4-1."
+    },
+    {
+     "q": "¿Qué distingue a AlphaGo Zero de la primera versión de AlphaGo?",
+     "options": [
+      "Aprendió solo mediante autojuego, sin datos de partidas humanas",
+      "Usaba más partidas de expertos humanos",
+      "Solo jugaba al ajedrez",
+      "Necesitaba que un humano le indicara cada jugada"
+     ],
+     "answer": 0,
+     "explain": "Partió de cero, sin conocimiento humano."
+    },
+    {
+     "q": "AlphaZero demostró que un mismo método podía alcanzar nivel sobrehumano en:",
+     "options": [
+      "Solo en Go",
+      "Póker y bridge",
+      "Go, ajedrez y shogi",
+      "Reconocimiento de voz"
+     ],
+     "answer": 2,
+     "explain": "Un único algoritmo para tres juegos de tablero."
+    }
+   ],
+   "lessons": [
+    {
+     "title": "El bucle del aprendizaje por refuerzo",
+     "text": [
+      "En el aprendizaje por refuerzo no se le dice a la IA la respuesta correcta: se le deja actuar y se le da una puntuación. El agente observa el estado del entorno, elige una acción y el entorno responde con un nuevo estado y una recompensa. Repitiendo el ciclo millones de veces, el agente ajusta su política, es decir, su forma de decidir qué hacer en cada situación.",
+      "DeepMind popularizó el aprendizaje por refuerzo profundo, que usa redes neuronales para representar esa política. Con DQN, un único sistema aprendió a jugar muchos juegos de Atari viendo solo los píxeles de la pantalla y la puntuación."
+     ]
+    },
+    {
+     "title": "De AlphaGo a AlphaZero",
+     "text": [
+      "El Go tiene tantas posiciones posibles que la fuerza bruta es inviable. AlphaGo combinó una red que propone jugadas, otra que evalúa posiciones y una búsqueda en árbol de Monte Carlo. Aprendió primero de partidas humanas y después jugando contra sí mismo. En marzo de 2016 venció a Lee Sedol por 4-1, con jugadas que sorprendieron a los expertos.",
+      "AlphaGo Zero (2017) eliminó los datos humanos y aprendió solo mediante autojuego. AlphaZero generalizó el método y alcanzó nivel sobrehumano en Go, ajedrez y shogi con un mismo algoritmo. La lección clave: con un buen método de autojuego, el sistema puede superar el conocimiento humano acumulado."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Módulo 3 · Ciencia e IA general",
+   "study": [
+    "AlphaFold predice la estructura 3D de una proteína a partir de su secuencia de aminoácidos; AlphaFold 2 destacó en CASP14 (2020) y su base de datos pública se lanzó en 2021 con EMBL-EBI.",
+    "En 2024, Demis Hassabis y John Jumper recibieron el Premio Nobel de Química (compartido con David Baker) por la predicción de estructuras de proteínas.",
+    "AlphaTensor y AlphaDev descubrieron algoritmos más eficientes (multiplicación de matrices y ordenación). AlphaProof y AlphaGeometry 2 alcanzaron nivel de medalla de plata en la Olimpiada Internacional de Matemáticas de 2024.",
+    "Gemini es la familia de modelos multimodales de Google DeepMind (presentada en diciembre de 2023). Matiz: el Transformer (2017) lo presentó Google Brain/Research, no DeepMind."
+   ],
+   "questions": [
+    {
+     "q": "¿Qué predice AlphaFold?",
+     "options": [
+      "La estructura 3D de una proteína a partir de su secuencia de aminoácidos",
+      "El clima a largo plazo",
+      "El precio de las acciones",
+      "El resultado de partidas de ajedrez"
+     ],
+     "answer": 0,
+     "explain": "Resolvió un problema de décadas en biología."
+    },
+    {
+     "q": "En 2024, Demis Hassabis y John Jumper recibieron el Premio Nobel de:",
+     "options": [
+      "Física",
+      "Química",
+      "Medicina",
+      "Literatura"
+     ],
+     "answer": 1,
+     "explain": "Nobel de Química 2024, compartido con David Baker."
+    },
+    {
+     "q": "¿Qué descubrió AlphaTensor?",
+     "options": [
+      "Nuevos antibióticos",
+      "Un nuevo lenguaje de programación",
+      "Algoritmos más eficientes para multiplicar matrices",
+      "Un nuevo tipo de batería"
+     ],
+     "answer": 2,
+     "explain": "Aplicó aprendizaje por refuerzo a la búsqueda de algoritmos."
+    },
+    {
+     "q": "¿Qué es Gemini?",
+     "options": [
+      "Un robot humanoide",
+      "Un videojuego de estrategia",
+      "Un chip de IA",
+      "Una familia de modelos multimodales de Google DeepMind"
+     ],
+     "answer": 3,
+     "explain": "Procesa texto, imágenes, audio y más."
+    },
+    {
+     "q": "¿Qué lograron AlphaProof y AlphaGeometry 2 en 2024?",
+     "options": [
+      "Ganar un torneo de póker",
+      "Resolver problemas de la Olimpiada Internacional de Matemáticas a nivel de medalla de plata",
+      "Diseñar un medicamento ya aprobado",
+      "Escribir una novela publicada"
+     ],
+     "answer": 1,
+     "explain": "Fue un hito en razonamiento matemático formal."
+    }
+   ],
+   "lessons": [
+    {
+     "title": "AlphaFold: de la secuencia a la forma",
+     "text": [
+      "Las proteínas son cadenas de aminoácidos que se pliegan en una forma tridimensional, y esa forma determina su función. Averiguarla en el laboratorio con técnicas como la cristalografía de rayos X o la crio-microscopía electrónica puede llevar meses o años, por eso el problema del plegamiento fue un gran reto de la biología durante décadas.",
+      "AlphaFold 2 destacó en la competición CASP14 (2020), con precisión comparable a la experimental en muchos casos. En 2021 se publicó una base de datos abierta junto con EMBL-EBI, que después creció hasta cientos de millones de estructuras predichas. En 2024, Hassabis y Jumper recibieron por ello el Nobel de Química."
+     ]
+    },
+    {
+     "title": "Más allá de las proteínas",
+     "text": [
+      "El mismo espíritu se aplicó a las matemáticas y la computación: AlphaTensor encontró algoritmos más eficientes para multiplicar matrices, AlphaDev para ordenar datos, y AlphaProof junto a AlphaGeometry 2 alcanzó nivel de medalla de plata en la Olimpiada Internacional de Matemáticas de 2024.",
+      "Gemini, presentada en diciembre de 2023, es la familia de modelos multimodales de Google DeepMind. Un matiz habitual: la arquitectura Transformer, base de estos modelos, la presentó Google Brain/Research en 2017, no DeepMind; hoy ambos equipos trabajan juntos."
+     ]
+    }
+   ]
+  }
+ ]
+}
