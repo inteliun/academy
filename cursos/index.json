@@ -10,5 +10,17 @@
    "TPM",
    "RCM"
   ]
+ },
+ {
+  "id": "deepmind",
+  "title": "Fundamentos de Google DeepMind",
+  "description": "Historia, aprendizaje por refuerzo, hitos como AlphaGo y AlphaFold, y la ciencia e IA general que desarrolla Google DeepMind.",
+  "tags": [
+   "DeepMind",
+   "IA",
+   "aprendizaje por refuerzo",
+   "AlphaGo",
+   "AlphaFold"
+  ]
  }
 ]
